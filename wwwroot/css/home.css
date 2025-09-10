@@ -1,0 +1,39 @@
+﻿body{
+    margin:0;
+}
+
+#colum-home {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+
+}
+
+.menu-bar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 20%;
+    height:527px;
+    background-color: rgba(29, 131, 117, 0.8);
+    padding-left: 15px;
+}
+
+.menu-bar a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+ }
+
+.home {
+    width: 100%;
+
+}
+
+.text-center{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+}
