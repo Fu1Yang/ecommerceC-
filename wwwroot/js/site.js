@@ -3,14 +3,15 @@ const array = ['/images/BMW-M2.jpg', '/images/bmwI8.jpg', '/images/bmw-smg.jpeg'
 const menuBar = document.querySelector(".menu-bar")
 let index = 0;
 let valeur = "";
-image.style.width = "500px";
-image.style.height = "300px";
+image.style.width = "80px";
+image.style.height = "40px";
+image.style.borderRadius = "40px";
 
 const carrousel = setInterval(() => {
     image.src =  array[index];
     index++
     if (index > array.length - 1) index = 0;
-}, 5000) 
+}, 1000) 
 
 
 function showAlert() {

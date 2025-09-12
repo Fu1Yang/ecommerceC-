@@ -1,0 +1,26 @@
+﻿@page
+@model ecommerce.Pages.PiecesAutoModel
+@{
+    ViewData["Title"] = "Piece automobile";
+}
+<link rel="stylesheet" href="~/css/piecesAuto.css" />
+
+<h1>Piece automobile</h1>
+<div class="row">
+    @foreach (var produit in Model.ProduitsListe)
+    {
+        <div class="col-md-4 mb-4 bodyCard">
+            <div class="card">
+                <img src="@produit.ImagePath" class="card-img-top" alt="@produit.Name">
+                <div class="card-body ">
+                    <h5 class="card-title">@produit.Name</h5>
+                    <p class="card-text">@produit.Description</p>
+                    <p class="card-text">Le prix: @produit.Price</p>
+                    <p class="card-text">Le stock: @produit.Stock</p>
+                    <a href="#" class="btn btn-primary">Ajouter au panier</a>
+                </div>
+            </div>
+        </div>
+    }
+</div>
+

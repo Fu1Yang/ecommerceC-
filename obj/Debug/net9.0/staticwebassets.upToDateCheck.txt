@@ -47,6 +47,7 @@ E:\JsPhpPythonCsharp\c#\ecommerce\ecommerce\wwwroot\lib\bootstrap\dist\js\bootst
 E:\JsPhpPythonCsharp\c#\ecommerce\ecommerce\wwwroot\lib\bootstrap\dist\js\bootstrap.js.map
 E:\JsPhpPythonCsharp\c#\ecommerce\ecommerce\wwwroot\lib\jquery\dist\jquery.slim.js
 E:\JsPhpPythonCsharp\c#\ecommerce\ecommerce\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.min.css
+E:\JsPhpPythonCsharp\c#\ecommerce\ecommerce\wwwroot\css\piecesAuto.css
 E:\JsPhpPythonCsharp\c#\ecommerce\ecommerce\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.min.css.map
 E:\JsPhpPythonCsharp\c#\ecommerce\ecommerce\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.css
 E:\JsPhpPythonCsharp\c#\ecommerce\ecommerce\wwwroot\lib\jquery-validation\dist\jquery.validate.min.js
@@ -62,6 +63,7 @@ E:\JsPhpPythonCsharp\c#\ecommerce\ecommerce\wwwroot\lib\bootstrap\dist\css\boots
 E:\JsPhpPythonCsharp\c#\ecommerce\ecommerce\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.css
 E:\JsPhpPythonCsharp\c#\ecommerce\ecommerce\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css
 wwwroot\css\home.css
+wwwroot\css\piecesAuto.css
 wwwroot\css\site.css
 wwwroot\favicon.ico
 wwwroot\images\bmwI8.jpg
@@ -69,6 +71,11 @@ wwwroot\images\BMW-M2.jpg
 wwwroot\images\bmw-smg.jpeg
 wwwroot\images\e46.jpg
 wwwroot\images\gts.jpg
+wwwroot\images\piecesAuto\amortisseurs.jpg
+wwwroot\images\piecesAuto\kit-distribution.jpg
+wwwroot\images\piecesAuto\kit-frein.jpg
+wwwroot\images\piecesAuto\moteur.png
+wwwroot\images\piecesAuto\roulement.jpg
 wwwroot\js\site.js
 wwwroot\lib\bootstrap\dist\css\bootstrap.css
 wwwroot\lib\bootstrap\dist\css\bootstrap.css.map

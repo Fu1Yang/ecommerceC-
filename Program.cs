@@ -15,7 +15,7 @@ namespace ecommerce
             builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
                 .AddCookie(options =>
                 {
-                    options.LoginPath = "/admin/login";       // où aller si non connecté
+                    options.LoginPath = "/client/index";       // où aller si non connecté
                     options.AccessDeniedPath = "/"; // où aller si connecté mais pas le bon rôle
                 });
 

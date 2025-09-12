@@ -9,6 +9,10 @@
       "PackagePath": "staticwebassets\\css\\home.css"
     },
     {
+      "Id": "E:\\JsPhpPythonCsharp\\c#\\ecommerce\\ecommerce\\wwwroot\\css\\piecesAuto.css",
+      "PackagePath": "staticwebassets\\css\\piecesAuto.css"
+    },
+    {
       "Id": "E:\\JsPhpPythonCsharp\\c#\\ecommerce\\ecommerce\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
@@ -35,6 +39,26 @@
     {
       "Id": "E:\\JsPhpPythonCsharp\\c#\\ecommerce\\ecommerce\\wwwroot\\images\\gts.jpg",
       "PackagePath": "staticwebassets\\images\\gts.jpg"
+    },
+    {
+      "Id": "E:\\JsPhpPythonCsharp\\c#\\ecommerce\\ecommerce\\wwwroot\\images\\piecesAuto\\amortisseurs.jpg",
+      "PackagePath": "staticwebassets\\images\\piecesAuto\\amortisseurs.jpg"
+    },
+    {
+      "Id": "E:\\JsPhpPythonCsharp\\c#\\ecommerce\\ecommerce\\wwwroot\\images\\piecesAuto\\kit-distribution.jpg",
+      "PackagePath": "staticwebassets\\images\\piecesAuto\\kit-distribution.jpg"
+    },
+    {
+      "Id": "E:\\JsPhpPythonCsharp\\c#\\ecommerce\\ecommerce\\wwwroot\\images\\piecesAuto\\kit-frein.jpg",
+      "PackagePath": "staticwebassets\\images\\piecesAuto\\kit-frein.jpg"
+    },
+    {
+      "Id": "E:\\JsPhpPythonCsharp\\c#\\ecommerce\\ecommerce\\wwwroot\\images\\piecesAuto\\moteur.png",
+      "PackagePath": "staticwebassets\\images\\piecesAuto\\moteur.png"
+    },
+    {
+      "Id": "E:\\JsPhpPythonCsharp\\c#\\ecommerce\\ecommerce\\wwwroot\\images\\piecesAuto\\roulement.jpg",
+      "PackagePath": "staticwebassets\\images\\piecesAuto\\roulement.jpg"
     },
     {
       "Id": "E:\\JsPhpPythonCsharp\\c#\\ecommerce\\ecommerce\\wwwroot\\js\\site.js",

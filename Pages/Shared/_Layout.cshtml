@@ -13,6 +13,7 @@
     <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
             <div class="container">
+                <img id="image" src="" alt="image de voiture de bmw">
                 <a class="navbar-brand" asp-area="" asp-page="/Index">Specialiste BMW</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                 aria-expanded="false" aria-label="Toggle navigation">
@@ -54,9 +55,12 @@
         </main>
     </div>
 
-    <footer class="border-top footer text-muted">
+    <footer class="border-top footer position-relative text-muted d-flex flex-row justify-content-between">
         <div >
             &copy; 2025 - ecommerce - <a asp-area="" asp-page="/Privacy">Privacy</a>
+        </div>
+        <div>
+            <a asp-area="" asp-page="/Admin/Login">Admin</a>
         </div>
     </footer>
 

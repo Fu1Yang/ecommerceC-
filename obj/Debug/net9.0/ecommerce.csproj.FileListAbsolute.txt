@@ -333,10 +333,12 @@ E:\JsPhpPythonCsharp\c#\ecommerce\ecommerce\bin\Debug\net9.0\ru\Microsoft.CodeAn
 E:\JsPhpPythonCsharp\c#\ecommerce\ecommerce\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.Scripting.resources.dll
 E:\JsPhpPythonCsharp\c#\ecommerce\ecommerce\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.Scripting.resources.dll
 E:\JsPhpPythonCsharp\c#\ecommerce\ecommerce\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.Scripting.resources.dll
-E:\JsPhpPythonCsharp\c#\ecommerce\ecommerce\obj\Debug\net9.0\compressed\6hm0z5kwmi-70f38ye1k0.gz
 E:\JsPhpPythonCsharp\c#\ecommerce\ecommerce\obj\Debug\net9.0\compressed\1481iiuxff-xfc6ggood7.gz
 E:\JsPhpPythonCsharp\c#\ecommerce\ecommerce\obj\Debug\net9.0\compressed\u7pb918cab-xfc6ggood7.gz
 E:\JsPhpPythonCsharp\c#\ecommerce\ecommerce\obj\Debug\net9.0\compressed\cjexaewtbu-ilix9q0sjg.gz
-E:\JsPhpPythonCsharp\c#\ecommerce\ecommerce\obj\Debug\net9.0\compressed\jkadl2ollk-twykvd8yg4.gz
 E:\JsPhpPythonCsharp\c#\ecommerce\ecommerce\bin\Debug\net9.0\BCrypt.Net-Next.dll
 E:\JsPhpPythonCsharp\c#\ecommerce\ecommerce\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt
+E:\JsPhpPythonCsharp\c#\ecommerce\ecommerce\obj\Debug\net9.0\ecommerce.sourcelink.json
+E:\JsPhpPythonCsharp\c#\ecommerce\ecommerce\obj\Debug\net9.0\compressed\jkadl2ollk-woeb893z4e.gz
+E:\JsPhpPythonCsharp\c#\ecommerce\ecommerce\obj\Debug\net9.0\compressed\6hm0z5kwmi-j7whzlkv9n.gz
+E:\JsPhpPythonCsharp\c#\ecommerce\ecommerce\obj\Debug\net9.0\compressed\o5rrgr46d7-re98bj6yzm.gz

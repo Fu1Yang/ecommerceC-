@@ -23,6 +23,9 @@ namespace ecommerce.Pages.Client
         {
 
         }
+        [BindProperty]
+        public Users Users { get; set; } = new Users();
+
         public async Task<IActionResult> OnPostAsync(string username, string password, string verificationPassword, string email, string phone = "0660752322", bool emailConfirmed = true)
         {
      

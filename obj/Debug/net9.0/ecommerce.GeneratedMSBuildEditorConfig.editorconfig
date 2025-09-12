@@ -76,6 +76,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2xpZW50XEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[E:/JsPhpPythonCsharp/c\#/ecommerce/ecommerce/Pages/Client/Profile.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2xpZW50XFByb2ZpbGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [E:/JsPhpPythonCsharp/c\#/ecommerce/ecommerce/Pages/Client/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2xpZW50XFJlZ2lzdGVyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -86,6 +90,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [E:/JsPhpPythonCsharp/c\#/ecommerce/ecommerce/Pages/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/JsPhpPythonCsharp/c\#/ecommerce/ecommerce/Pages/PiecesAuto.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGllY2VzQXV0by5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [E:/JsPhpPythonCsharp/c\#/ecommerce/ecommerce/Pages/Privacy.cshtml]
