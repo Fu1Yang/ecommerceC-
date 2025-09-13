@@ -12,6 +12,7 @@ namespace ecommerce.Data
         // Déclare chaque table comme DbSet
         public DbSet<Users> Users { get; set; }
         public DbSet<Produits> Produits { get; set; }
+        public DbSet<Rdv> Rdvs { get; set; }
 
 
         // Optionnel : personnaliser le mapping
@@ -19,6 +20,7 @@ namespace ecommerce.Data
         {
             modelBuilder.Entity<Users>().ToTable("Users");
             modelBuilder.Entity<Produits>().ToTable("Produits");
+            modelBuilder.Entity<Rdv>().ToTable("Rdvs");
         }
     }
 }

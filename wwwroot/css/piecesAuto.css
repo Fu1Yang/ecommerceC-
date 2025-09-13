@@ -1,11 +1,13 @@
-﻿
+﻿body{
+    margin:1%;
+}
 img{
     width: auto;
     height: 150px;
 }
 .bodyCard {
-    width: 500px;
-
+    width: 450px;
+    margin:1%;
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);

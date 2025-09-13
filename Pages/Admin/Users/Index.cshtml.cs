@@ -12,6 +12,7 @@ using Microsoft.AspNetCore.Authorization;
 namespace ecommerce.Pages.Admin.Users
 {
     [Authorize(Roles = "Admin")]
+    [ResponseCache(NoStore = true, Location = ResponseCacheLocation.None)]
     public class IndexModel : PageModel
     {
         private readonly ecommerce.Data.DataContext _context;

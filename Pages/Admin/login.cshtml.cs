@@ -20,6 +20,7 @@ namespace ecommerce.Pages.Admin
             {
                 return Redirect("/admin/users");
             }
+
             return Page();
         }
 
