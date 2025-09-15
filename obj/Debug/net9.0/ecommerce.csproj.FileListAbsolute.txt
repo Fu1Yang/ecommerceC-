@@ -260,8 +260,6 @@ E:\JsPhpPythonCsharp\c#\ecommerce\ecommerce\obj\Debug\net9.0\ecommerce.sourcelin
 E:\JsPhpPythonCsharp\c#\ecommerce\ecommerce\obj\Debug\net9.0\scopedcss\Pages\Shared\_Layout.cshtml.rz.scp.css
 E:\JsPhpPythonCsharp\c#\ecommerce\ecommerce\obj\Debug\net9.0\scopedcss\bundle\ecommerce.styles.css
 E:\JsPhpPythonCsharp\c#\ecommerce\ecommerce\obj\Debug\net9.0\scopedcss\projectbundle\ecommerce.bundle.scp.css
-E:\JsPhpPythonCsharp\c#\ecommerce\ecommerce\obj\Debug\net9.0\compressed\cjexaewtbu-ilix9q0sjg.gz
-E:\JsPhpPythonCsharp\c#\ecommerce\ecommerce\obj\Debug\net9.0\compressed\6hm0z5kwmi-j7whzlkv9n.gz
 E:\JsPhpPythonCsharp\c#\ecommerce\ecommerce\obj\Debug\net9.0\compressed\i1fh4qk782-61n19gt1b8.gz
 E:\JsPhpPythonCsharp\c#\ecommerce\ecommerce\obj\Debug\net9.0\compressed\jkadl2ollk-woeb893z4e.gz
 E:\JsPhpPythonCsharp\c#\ecommerce\ecommerce\obj\Debug\net9.0\compressed\c454rfi09l-bqjiyaj88i.gz
@@ -340,5 +338,8 @@ E:\JsPhpPythonCsharp\c#\ecommerce\ecommerce\obj\Debug\net9.0\refint\ecommerce.dl
 E:\JsPhpPythonCsharp\c#\ecommerce\ecommerce\obj\Debug\net9.0\ecommerce.pdb
 E:\JsPhpPythonCsharp\c#\ecommerce\ecommerce\obj\Debug\net9.0\ecommerce.genruntimeconfig.cache
 E:\JsPhpPythonCsharp\c#\ecommerce\ecommerce\obj\Debug\net9.0\ref\ecommerce.dll
-E:\JsPhpPythonCsharp\c#\ecommerce\ecommerce\obj\Debug\net9.0\compressed\o5rrgr46d7-7jd5tweknx.gz
+E:\JsPhpPythonCsharp\c#\ecommerce\ecommerce\obj\Debug\net9.0\compressed\o5rrgr46d7-7yo2hicoc0.gz
+E:\JsPhpPythonCsharp\c#\ecommerce\ecommerce\obj\Debug\net9.0\compressed\6hm0z5kwmi-7qcehapux7.gz
+E:\JsPhpPythonCsharp\c#\ecommerce\ecommerce\obj\Debug\net9.0\compressed\cjexaewtbu-8n3jbxht7t.gz
 E:\JsPhpPythonCsharp\c#\ecommerce\ecommerce\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt
+E:\JsPhpPythonCsharp\c#\ecommerce\ecommerce\obj\Debug\net9.0\compressed\smga1voohs-3r8b2a0bt1.gz

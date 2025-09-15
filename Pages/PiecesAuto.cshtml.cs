@@ -21,5 +21,10 @@ namespace ecommerce.Pages
             ProduitsListe = await _context.Produits.ToListAsync();
 
         }
+
+        public void AddCart()
+        {
+            Console.WriteLine("oki");
+        }
     }
 }

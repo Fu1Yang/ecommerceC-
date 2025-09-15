@@ -1,9 +1,10 @@
 ﻿body{
     margin:1%;
 }
-img{
+.piece img {
     width: auto;
     height: 150px;
+    margin-left: 25%;
 }
 .bodyCard {
     width: 450px;
@@ -20,5 +21,8 @@ img{
 .card-body {
     height: 350px;
     border: none;
+}
+.card-body a {
+    
 }
 

@@ -53,6 +53,7 @@ E:\JsPhpPythonCsharp\c#\ecommerce\ecommerce\wwwroot\lib\bootstrap\dist\css\boots
 E:\JsPhpPythonCsharp\c#\ecommerce\ecommerce\wwwroot\lib\jquery-validation\dist\jquery.validate.min.js
 E:\JsPhpPythonCsharp\c#\ecommerce\ecommerce\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css.map
 E:\JsPhpPythonCsharp\c#\ecommerce\ecommerce\wwwroot\lib\bootstrap\dist\js\bootstrap.min.js
+E:\JsPhpPythonCsharp\c#\ecommerce\ecommerce\wwwroot\js\panier.js
 E:\JsPhpPythonCsharp\c#\ecommerce\ecommerce\wwwroot\lib\jquery\dist\jquery.min.map
 E:\JsPhpPythonCsharp\c#\ecommerce\ecommerce\wwwroot\lib\bootstrap\dist\css\bootstrap.css
 E:\JsPhpPythonCsharp\c#\ecommerce\ecommerce\wwwroot\lib\jquery\LICENSE.txt
@@ -67,15 +68,18 @@ wwwroot\css\piecesAuto.css
 wwwroot\css\site.css
 wwwroot\favicon.ico
 wwwroot\images\bmwI8.jpg
+wwwroot\images\bmwjpg.jpg
 wwwroot\images\BMW-M2.jpg
 wwwroot\images\bmw-smg.jpeg
 wwwroot\images\e46.jpg
 wwwroot\images\gts.jpg
+wwwroot\images\Icons\icons8-panier-100.png
 wwwroot\images\piecesAuto\amortisseurs.jpg
 wwwroot\images\piecesAuto\kit-distribution.jpg
 wwwroot\images\piecesAuto\kit-frein.jpg
 wwwroot\images\piecesAuto\moteur.png
 wwwroot\images\piecesAuto\roulement.jpg
+wwwroot\js\panier.js
 wwwroot\js\site.js
 wwwroot\lib\bootstrap\dist\css\bootstrap.css
 wwwroot\lib\bootstrap\dist\css\bootstrap.css.map

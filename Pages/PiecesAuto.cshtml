@@ -10,17 +10,18 @@
     @foreach (var produit in Model.ProduitsListe)
     {
         <div class="col-md-4 mb-4 bodyCard">
-            <div >
-                <img src="@produit.ImagePath" class="card-img-top" alt="@produit.Name">
+            <div class="piece">
+                <img src="@produit.ImagePath"  alt="@produit.Name">
                 <div class="card-body ">
                     <h5 class="card-title">@produit.Name</h5>
                     <p class="card-text">@produit.Description</p>
                     <p class="card-text">Le prix: @produit.Price</p>
                     <p class="card-text">Le stock: @produit.Stock</p>
-                    <a href="#" class="btn btn-primary">Ajouter au panier</a>
+                    <button onclick="AddCart()" class="btn btn-primary">Ajouter au panier</button>
                 </div>
             </div>
         </div>
     }
 </div>
 
+<script src="~/js/panier.js"></script>
