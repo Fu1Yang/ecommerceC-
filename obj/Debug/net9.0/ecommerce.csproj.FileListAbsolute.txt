@@ -341,5 +341,4 @@ E:\JsPhpPythonCsharp\c#\ecommerce\ecommerce\obj\Debug\net9.0\ref\ecommerce.dll
 E:\JsPhpPythonCsharp\c#\ecommerce\ecommerce\obj\Debug\net9.0\compressed\o5rrgr46d7-7yo2hicoc0.gz
 E:\JsPhpPythonCsharp\c#\ecommerce\ecommerce\obj\Debug\net9.0\compressed\6hm0z5kwmi-7qcehapux7.gz
 E:\JsPhpPythonCsharp\c#\ecommerce\ecommerce\obj\Debug\net9.0\compressed\cjexaewtbu-8n3jbxht7t.gz
-E:\JsPhpPythonCsharp\c#\ecommerce\ecommerce\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt
-E:\JsPhpPythonCsharp\c#\ecommerce\ecommerce\obj\Debug\net9.0\compressed\smga1voohs-3r8b2a0bt1.gz
+E:\JsPhpPythonCsharp\c#\ecommerce\ecommerce\obj\Debug\net9.0\compressed\smga1voohs-k6y2dggk39.gz

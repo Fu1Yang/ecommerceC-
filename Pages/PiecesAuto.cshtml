@@ -3,6 +3,12 @@
 @{
     ViewData["Title"] = "Piece automobile";
 }
+@inject Microsoft.AspNetCore.Antiforgery.IAntiforgery Antiforgery
+@{
+    var token = Antiforgery.GetAndStoreTokens(HttpContext).RequestToken;
+}
+
+<input type="hidden" name="__RequestVerificationToken" value="@token" />
 <link rel="stylesheet" href="~/css/piecesAuto.css" />
 
 <h1>Piece automobile</h1>
@@ -17,11 +23,11 @@
                     <p class="card-text">@produit.Description</p>
                     <p class="card-text">Le prix: @produit.Price</p>
                     <p class="card-text">Le stock: @produit.Stock</p>
-                    <button onclick="AddCart()" class="btn btn-primary">Ajouter au panier</button>
+                    <button onclick="AddCart(@produit.Id)" class="btn btn-primary">Ajouter au panier</button>
                 </div>
             </div>
         </div>
     }
 </div>
 
-<script src="~/js/panier.js"></script>
+    <script src="~/js/panier.js"></script>
