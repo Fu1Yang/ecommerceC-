@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "Rd7ADQ174bI=",
+  "dgSpecHash": "KrEMT12K6ss=",
   "success": true,
   "projectFilePath": "E:\\JsPhpPythonCsharp\\c#\\ecommerce\\ecommerce\\ecommerce.csproj",
   "expectedPackageFiles": [
@@ -140,6 +140,7 @@
     "C:\\Users\\Lenovo P51\\.nuget\\packages\\nuget.projectmodel\\6.11.0\\nuget.projectmodel.6.11.0.nupkg.sha512",
     "C:\\Users\\Lenovo P51\\.nuget\\packages\\nuget.protocol\\6.11.0\\nuget.protocol.6.11.0.nupkg.sha512",
     "C:\\Users\\Lenovo P51\\.nuget\\packages\\nuget.versioning\\6.11.0\\nuget.versioning.6.11.0.nupkg.sha512",
+    "C:\\Users\\Lenovo P51\\.nuget\\packages\\stripe.net\\48.0.0\\stripe.net.48.0.0.nupkg.sha512",
     "C:\\Users\\Lenovo P51\\.nuget\\packages\\system.buffers\\4.6.0\\system.buffers.4.6.0.nupkg.sha512",
     "C:\\Users\\Lenovo P51\\.nuget\\packages\\system.clientmodel\\1.0.0\\system.clientmodel.1.0.0.nupkg.sha512",
     "C:\\Users\\Lenovo P51\\.nuget\\packages\\system.codedom\\6.0.0\\system.codedom.6.0.0.nupkg.sha512",

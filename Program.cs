@@ -1,4 +1,5 @@
 using ecommerce.Data;
+using ecommerce.Models;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.EntityFrameworkCore;
 using System;
@@ -18,6 +19,8 @@ namespace ecommerce
                     options.LoginPath = "/client/index";       // où aller si non connecté
                     options.AccessDeniedPath = "/"; // où aller si connecté mais pas le bon rôle
                 });
+
+            builder.Services.Configure<StripeSettings>(builder.Configuration.GetSection("Stripe"));
 
             // Add services to the container.
             builder.Services.AddRazorPages();

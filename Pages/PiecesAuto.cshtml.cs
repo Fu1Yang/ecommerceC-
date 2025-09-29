@@ -31,25 +31,25 @@ namespace ecommerce.Pages
 
             var cartJson = HttpContext.Session.GetString("Cart");
             var cart = string.IsNullOrEmpty(cartJson)
-                ? new Dictionary<int, int>()
-                : JsonConvert.DeserializeObject<Dictionary<int, int>>(cartJson);
+                ? new List<CartItemDto>()
+                : JsonConvert.DeserializeObject<List<CartItemDto>>(cartJson);
 
-            if (cart.ContainsKey(productId))
-                cart[productId]++;
+            // Check if the product already exists
+            var existingItem = cart.FirstOrDefault(c => c.ProductId == productId);
+            if (existingItem != null)
+            {
+                existingItem.Quantity++;
+            }
             else
-                cart[productId] = 1;
+            {
+                cart.Add(new CartItemDto { ProductId = productId, Quantity = 1 });
+            }
 
             HttpContext.Session.SetString("Cart", JsonConvert.SerializeObject(cart));
 
-            // DEBUG: Afficher le contenu du panier
-            Console.WriteLine("Contenu du panier:");
-            foreach (var item in cart)
-            {
-                Console.WriteLine($"- Produit {item.Key}: {item.Value} unité(s)");
-            }
-
             return new JsonResult(new { success = true, message = "Produit ajouté au panier" });
         }
+
         public class CartItemDto
         {
             public int ProductId { get; set; }

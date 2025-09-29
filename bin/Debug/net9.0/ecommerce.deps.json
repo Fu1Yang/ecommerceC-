@@ -14,7 +14,8 @@
           "Microsoft.EntityFrameworkCore.Design": "9.0.8",
           "Microsoft.EntityFrameworkCore.SqlServer": "9.0.8",
           "Microsoft.EntityFrameworkCore.Tools": "9.0.8",
-          "Microsoft.VisualStudio.Web.CodeGeneration.Design": "9.0.0"
+          "Microsoft.VisualStudio.Web.CodeGeneration.Design": "9.0.0",
+          "Stripe.net": "48.0.0"
         },
         "runtime": {
           "ecommerce.dll": {}
@@ -1935,6 +1936,18 @@
           }
         }
       },
+      "Stripe.net/48.0.0": {
+        "dependencies": {
+          "Newtonsoft.Json": "13.0.3",
+          "System.Configuration.ConfigurationManager": "8.0.0"
+        },
+        "runtime": {
+          "lib/net8.0/Stripe.net.dll": {
+            "assemblyVersion": "48.0.0.0",
+            "fileVersion": "48.0.0.0"
+          }
+        }
+      },
       "System.Buffers/4.6.0": {},
       "System.ClientModel/1.0.0": {
         "dependencies": {
@@ -3108,6 +3121,13 @@
       "sha512": "sha512-v/GGlIj2dd7svplFmASWEueu62veKW0MrMtBaZ7QG8aJTSGv2yE+pgUGhXRcQ4nxNOEq/wLBrz1vkth/1SND7A==",
       "path": "nuget.versioning/6.11.0",
       "hashPath": "nuget.versioning.6.11.0.nupkg.sha512"
+    },
+    "Stripe.net/48.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-fOR5HbFTSXLDcw0abxPkTL6yv107AaP4J40YRwrV5joDilfEm3JUx+g83blOT0Ab+UNwKXJZp3BC4O4Sqzci3w==",
+      "path": "stripe.net/48.0.0",
+      "hashPath": "stripe.net.48.0.0.nupkg.sha512"
     },
     "System.Buffers/4.6.0": {
       "type": "package",

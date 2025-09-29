@@ -39,4 +39,20 @@ else
             </tr>
         </tfoot>
     </table>
+    <div>
+        <form asp-action="Vider" method="post">
+            @Html.AntiForgeryToken()
+            <button type="submit" class="btn btn-danger"
+                    onclick="return confirm('Voulez-vous vraiment vider le panier ?')">
+                Supprimer le panier
+            </button>
+        </form>
+
+        <form asp-action="Valider" method="post">
+            @Html.AntiForgeryToken()
+            <button type="submit" class="btn btn-success">Valider le panier</button>
+        </form>
+
+    </div>
+
 }
