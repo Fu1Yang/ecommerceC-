@@ -8,19 +8,21 @@
         public string Password { get; set; }
         public string Phone { get; set; }
         public bool EmailConfirmed { get; set; } = false;
+        public string Role { get; set; }
 
 
         // Constructeur vide (requis par EF Core)
         public Users() { }
 
         // Constructeur avec paramètres
-        public Users(string name, string email, string password, string phone, bool emailConfirmed)
+        public Users(string name, string email, string password, string phone, bool emailConfirmed, string role = "User")
         {
             Name = name;
             Email = email;
             Password = password;
             Phone = phone;
             EmailConfirmed = emailConfirmed;
+            Role = role;
         }
 
     }

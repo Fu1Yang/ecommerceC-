@@ -24,5 +24,6 @@ namespace ecommerce.Data
             modelBuilder.Entity<Rdv>().ToTable("Rdvs");
             modelBuilder.Entity<Panier>().ToTable("Paniers");
         }
+        public DbSet<ecommerce.Models.Profiles> Profiles { get; set; } = default!;
     }
 }

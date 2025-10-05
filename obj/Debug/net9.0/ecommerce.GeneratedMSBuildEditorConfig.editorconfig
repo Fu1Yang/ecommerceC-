@@ -52,6 +52,26 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cUHJvZHVpdFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[E:/JsPhpPythonCsharp/c\#/ecommerce/ecommerce/Pages/Admin/Profile/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cUHJvZmlsZVxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/JsPhpPythonCsharp/c\#/ecommerce/ecommerce/Pages/Admin/Profile/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cUHJvZmlsZVxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/JsPhpPythonCsharp/c\#/ecommerce/ecommerce/Pages/Admin/Profile/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cUHJvZmlsZVxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/JsPhpPythonCsharp/c\#/ecommerce/ecommerce/Pages/Admin/Profile/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cUHJvZmlsZVxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/JsPhpPythonCsharp/c\#/ecommerce/ecommerce/Pages/Admin/Profile/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cUHJvZmlsZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [E:/JsPhpPythonCsharp/c\#/ecommerce/ecommerce/Pages/Admin/Rdvs/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cUmR2c1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 

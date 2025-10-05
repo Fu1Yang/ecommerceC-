@@ -21,7 +21,7 @@ namespace ecommerce.Pages.Client
 
         public void OnGet()
         {
-            // Si l'utilisateur est déjà connecté, tu peux le rediriger
+            // Si l'utilisateur est déjà connecté, on le redirige
             if (User.Identity.IsAuthenticated)
                 Response.Redirect("/Client/Index");
         }
