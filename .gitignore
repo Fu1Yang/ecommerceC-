@@ -1,0 +1,10 @@
+﻿# Build
+bin/
+obj/
+
+# Configuration locale
+appsettings.json
+appsettings.Development.json
+
+# Utilisateur
+*.user

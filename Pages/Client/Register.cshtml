@@ -1,0 +1,15 @@
+﻿@page
+@model ecommerce.Pages.Client.RegisterModel
+@{
+    ViewData["Title"] = "Insciption";
+}
+<h1>Register</h1>
+<form method="post">
+    <input asp-for="Users.Name" name="username" placeholder="your name" />
+    <input asp-for="Users.Password" name="password" type="password" placeholder="your password" />
+    <input type="password" name="verificationPassword" placeholder="password verification" />
+    <input asp-for="Users.Phone" name="phone" placeholder="your phone" />
+    <input asp-for="Users.Email" name="email" type="email" placeholder="your email" />
+    <button type="submit">Register</button>
+</form>
+

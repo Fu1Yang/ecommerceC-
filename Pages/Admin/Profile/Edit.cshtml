@@ -1,0 +1,66 @@
+﻿@page
+@model ecommerce.Pages.Admin.Profile.EditModel
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>Profiles</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Profiles.Id" />
+            <div class="form-group">
+                
+                <label asp-for="Profiles.IdUser" class="control-label"></label>
+                <input asp-for="Profiles.IdUser" class="form-control" />
+                <span asp-validation-for="Profiles.IdUser" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                
+                <label asp-for="Profiles.Name" class="control-label"></label>
+                <input asp-for="Profiles.Name" class="form-control" />
+                <span asp-validation-for="Profiles.Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                
+                <label asp-for="Profiles.Firstname" class="control-label"></label>
+                <input asp-for="Profiles.Firstname" class="form-control" />
+                <span asp-validation-for="Profiles.Firstname" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                
+                <label asp-for="Profiles.Age" class="control-label"></label>
+                <input asp-for="Profiles.Age" class="form-control" />
+                <span asp-validation-for="Profiles.Age" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                
+                <label asp-for="Profiles.PathPhoto" class="control-label"></label>
+                <input asp-for="Profiles.PathPhoto" class="form-control" />
+                <span asp-validation-for="Profiles.PathPhoto" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                
+                <label asp-for="Profiles.Adresse" class="control-label"></label>
+                <input asp-for="Profiles.Adresse" class="form-control" />
+                <span asp-validation-for="Profiles.Adresse" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="./Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

@@ -1,0 +1,18 @@
+﻿@page
+@model ecommerce.Pages.Client.ProfileModel
+@{
+    ViewData["Title"] = "Profile";
+}
+
+<h1>Profile</h1>
+
+@foreach (var profile in Model.UserProfile)
+{
+    <h1>@profile.Name</h1>
+    <p>@profile.Firstname</p>
+    <p>@profile.Age</p>
+    <img src="@profile.PathPhoto" alt="@profile.Name">
+    <p>@profile.Adresse</p>
+}
+
+<a asp-page="/Index">Return home</a>

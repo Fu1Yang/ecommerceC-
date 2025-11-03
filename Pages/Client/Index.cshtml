@@ -1,0 +1,11 @@
+﻿@page
+@model ecommerce.Pages.Client.IndexModel
+@{
+    ViewData["Title"] = "Connexion";
+}
+<h1>Login</h1>
+<form method="post">
+    <input asp-for="Email" type="text" placeholder="Email" />
+    <input asp-for="Password" type="password" placeholder="Mot de passe" />
+    <button type="submit">Se connecter</button>
+</form>
