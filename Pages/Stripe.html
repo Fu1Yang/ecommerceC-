@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://js.stripe.com/v3/"></script>
+</head>
+<body>
+    <button id="checkout-button">Payer 10€</button>
+    <script>
+        const stripe = Stripe('pk_test_votre_cle_publique');
+
+        document.getElementById('checkout-button').addEventListener('click', async () => {
+            const response = await fetch('/api/payment/create-payment-intent', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ amount: 1000, currency: 'eur' })
+            });
+
+            const { clientSecret } = await response.json();
+
+            const { error } = await stripe.confirmPayment({
+                clientSecret,
+                confirmParams: {
+                    return_url: 'https://votre-site.com/success',
+                }
+            });
+
+            if (error) {
+                console.error(error.message);
+            }
+        });
+    </script>
+</body>
+</html>

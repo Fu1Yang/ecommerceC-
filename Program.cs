@@ -1,5 +1,6 @@
 using ecommerce.Data;
 using ecommerce.Models;
+using ecommerce.Services;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.EntityFrameworkCore;
 using Stripe;
@@ -12,6 +13,8 @@ namespace ecommerce
         {
             var builder = WebApplication.CreateBuilder(args);
 
+            // Charger la configuration Stripe
+            StripeConfiguration.ApiKey = builder.Configuration["Stripe:SecretKey"];
 
             builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
                 .AddCookie(options =>
@@ -19,8 +22,6 @@ namespace ecommerce
                     options.LoginPath = "/client/index";       // si non connecté
                     options.AccessDeniedPath = "/"; // où aller si connecté mais pas le bon rôle
                 });
-
-            builder.Services.Configure<StripeSettings>(builder.Configuration.GetSection("Stripe"));
 
             // Add services to the container.
             builder.Services.AddRazorPages();
@@ -35,9 +36,7 @@ namespace ecommerce
                 options.Cookie.HttpOnly = true;
                 options.Cookie.IsEssential = true;
             });
-
-            // Charger la configuration Stripe
-            StripeConfiguration.ApiKey = builder.Configuration["Stripe:SecretKey"];
+            builder.Services.AddSingleton<StripePaymentService>();
 
             var app = builder.Build();
 
