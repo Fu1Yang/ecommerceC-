@@ -1,6 +1,9 @@
 ﻿body{
     margin:1%;
 }
+h1 {
+    text-align:center;
+}
 .piece img {
     width: auto;
     height: 150px;
