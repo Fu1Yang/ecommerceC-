@@ -4,6 +4,7 @@
 
     const formData = new FormData();
     formData.append('productId', produitId);
+    // / donner le choix de la quantité à mettre dans le panier a faire plus tard.
 
     // Utilisez une URL relative sans spécifier le domaine
     fetch('?handler=AddToCart', {
