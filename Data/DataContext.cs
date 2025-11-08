@@ -15,6 +15,8 @@ namespace ecommerce.Data
         public DbSet<Rdv> Rdvs { get; set; }
         public DbSet<Panier> Paniers { get; set; }
 
+        public DbSet<Tuto> Tuto { get; set; }
+
 
         //personnaliser le mapping
         protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -23,6 +25,8 @@ namespace ecommerce.Data
             modelBuilder.Entity<Produits>().ToTable("Produits");
             modelBuilder.Entity<Rdv>().ToTable("Rdvs");
             modelBuilder.Entity<Panier>().ToTable("Paniers");
+            modelBuilder.Entity<Tuto>().ToTable("Tuto");
+
         }
         public DbSet<ecommerce.Models.Profiles> Profiles { get; set; } = default!;
     }
