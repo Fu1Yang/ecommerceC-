@@ -3,13 +3,18 @@
 @{
     ViewData["Title"] = "tuto reparation";
 }
+<link rel="stylesheet" href="~/css/tuto.css" />
 <h1>Tuto</h1>
-
-<div class="card" style="width: 18rem;">
-    <img src="..." class="card-img-top" alt="...">
-    <div class="card-body">
-        <h5 class="card-title">Changement de roulement</h5>
-        <p class="card-text">tuto pour changer un roulement sur peugeot 307</p>
-        <a href="https://www.youtube.com/watch?v=tjapbohXbjE" class="btn btn-primary">Lancer la video</a>
+<div class="tuto">
+@foreach (var tuto in Model.TutoListe)
+{ 
+    <div class="card" style="width: 18rem;">
+        <img src="..." class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">@tuto.TitleTuto</h5>
+            <p class="card-text">@tuto.Description</p>
+            <a href="@tuto.Url" class="btn btn-primary">Lancer la video</a>
+        </div>
     </div>
+}
 </div>

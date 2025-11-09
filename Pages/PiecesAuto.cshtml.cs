@@ -10,13 +10,11 @@ namespace ecommerce.Pages
     public class PiecesAutoModel : PageModel
     {
         private readonly DataContext _context;
-
+        public List<Produits> ProduitsListe { get; set; }
         public PiecesAutoModel(DataContext context)
         {
             _context = context;
         }
-
-        public List<Produits> ProduitsListe { get; set; }
 
         public async Task OnGet()
         {

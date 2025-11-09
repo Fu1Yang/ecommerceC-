@@ -13,12 +13,30 @@
 <table class="table">
     <thead>
         <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Tuto[0].TitleTuto)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Tuto[0].Description)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Tuto[0].Url)
+            </th>
             <th></th>
         </tr>
     </thead>
     <tbody>
 @foreach (var item in Model.Tuto) {
         <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.TitleTuto)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Description)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Url)
+            </td>
             <td>
                 <a asp-page="./Edit" asp-route-id="@item.Id">Edit</a> |
                 <a asp-page="./Details" asp-route-id="@item.Id">Details</a> |

@@ -1,29 +1,23 @@
-﻿body{
-    margin:1%;
-}
-h1 {
+﻿h1 {
     text-align:center;
-}
-.piece img {
-    width: auto;
-    height: 150px;
-    margin-left: 25%;
 }
 .bodyCard {
     width: 450px;
-    margin:1%;
+    margin: 1%;
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
     transition: transform 0.2s, box-shadow 0.2s;
 }
+
     .bodyCard:hover {
         transform: translateY(-5px);
         box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
     }
-.card-body {
-    height: 350px;
-    border: none;
+
+.card{
+    border:none;
 }
-
-
+.card-body {
+    width: 450px;
+}

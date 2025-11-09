@@ -7,11 +7,9 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using ecommerce.Data;
 using ecommerce.Models;
-using Microsoft.AspNetCore.Authorization;
 
 namespace ecommerce.Pages.Admin.Tuto
 {
-    [Authorize(Roles = "Admin")]
     public class CreateModel : PageModel
     {
         private readonly ecommerce.Data.DataContext _context;
