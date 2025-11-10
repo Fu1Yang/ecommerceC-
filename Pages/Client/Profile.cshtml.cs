@@ -15,11 +15,13 @@ namespace ecommerce.Pages.Client
         private readonly DataContext _context;
         public string? UserId { get; set; }
         public string? UserName { get; set; }
+        public string? Name { get; set; }
         public string? Firstname { get; set; }
         public string? Age { get; set; }
         public string? PathPhoto { get; set; }
         public string? Adresse { get; set; }
         public string? Email { get; set; }
+        public string? Phone { get; set; }
 
         public ProfileModel(DataContext context)
         {
@@ -29,14 +31,14 @@ namespace ecommerce.Pages.Client
         public async Task OnGet()
         {
             UserId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
-            UserName = User.Identity?.Name;
-
+            UserName = User.FindFirst(ClaimTypes.Name)?.Value;
+            Email = User.FindFirst(ClaimTypes.Email)?.Value;
+            //Phone = User.FindFirst(ClaimTypes.Phone)?.Value;
+            Name = User.FindFirst("Name")?.Value;
             Firstname = User.FindFirst("Firstname")?.Value;
             Age = User.FindFirst("Age")?.Value;
             Adresse = User.FindFirst("Adresse")?.Value;
             PathPhoto = User.FindFirst("PathPhoto")?.Value;
-
-            Console.WriteLine($"Profil chargé pour {UserName}");
         }
 
 

@@ -45,17 +45,21 @@ namespace ecommerce.Pages.Client
             // Création des claims
             var claims = new List<Claim>
             {
+                // permet d’identifier l’utilisateur
+                new Claim(ClaimTypes.NameIdentifier, user.Id.ToString()),
                 new Claim(ClaimTypes.Name, user.Name),
                 new Claim(ClaimTypes.Email, user.Email),
             };
             // Ajouter les infos du profil si elles existent
-            if (profile != null)
+            if (profile.IdUser != null )
             {
+                claims.Add(new Claim("Name", profile.Name ?? ""));
                 claims.Add(new Claim("Firstname", profile.Firstname ?? ""));
                 claims.Add(new Claim("Age", profile.Age.ToString()));
                 claims.Add(new Claim("Adresse", profile.Adresse ?? ""));
                 claims.Add(new Claim("PathPhoto", profile.PathPhoto ?? ""));
             }
+       
             var claimsIdentity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
             await HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, new ClaimsPrincipal(claimsIdentity));
 
