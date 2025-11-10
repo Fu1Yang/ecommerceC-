@@ -1,0 +1,38 @@
+﻿body {
+    background: url("../images/admin.jpg") center/cover no-repeat;
+    position: relative;
+    height: 100vh;
+    margin: 0;
+}
+
+    body::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: black;
+        opacity: 0.5; /* <= ajuste ici l’opacité */
+        z-index: 1;
+    }
+
+main, header, footer, div, p {
+    position: relative;
+    z-index: 2; /* pour que le texte soit visible */
+}
+
+
+h1{
+    text-align:center;
+}
+form{
+    display:flex;
+    justify-content:center;
+    align-content:center;
+}
+
+img{
+    width: 25%;
+    height:auto;
+}

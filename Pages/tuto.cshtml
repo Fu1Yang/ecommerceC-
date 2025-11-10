@@ -5,15 +5,18 @@
 }
 <link rel="stylesheet" href="~/css/tuto.css" />
 <h1>Tuto</h1>
-<div class="tuto">
+<div class="row">
+
 @foreach (var tuto in Model.TutoListe)
-{ 
-    <div class="card" style="width: 18rem;">
-        <img src="..." class="card-img-top" alt="...">
-        <div class="card-body">
-            <h5 class="card-title">@tuto.TitleTuto</h5>
-            <p class="card-text">@tuto.Description</p>
-            <a href="@tuto.Url" class="btn btn-primary">Lancer la video</a>
+{
+    <div class="col-md-4 mb-4 bodyCard">
+        <div class="card" style="width: 18rem;">
+            <img src="../images/bmwjpg.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">@tuto.TitleTuto</h5>
+                <p class="card-text">@tuto.Description</p>
+                <a href="@tuto.Url" class="btn btn-primary">Lancer la video</a>
+            </div>
         </div>
     </div>
 }

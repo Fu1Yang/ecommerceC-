@@ -7,9 +7,11 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
 using ecommerce.Data;
 using ecommerce.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace ecommerce.Pages.Admin.Tuto
 {
+    [Authorize(Roles = "Admin")]
     public class DeleteModel : PageModel
     {
         private readonly ecommerce.Data.DataContext _context;

@@ -18,6 +18,9 @@
 .card{
     border:none;
 }
+.card img{
+    width: 428px;
+}
 .card-body {
     width: 450px;
 }
