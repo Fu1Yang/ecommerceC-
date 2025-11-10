@@ -4,15 +4,14 @@
     ViewData["Title"] = "Profile";
 }
 
-<h1>Profile</h1>
+<h2>Profil</h2>
+<p>Nom : @Model.UserName</p>
+<p>Prénom : @Model.Firstname</p>
+<p>Âge : @Model.Age</p>
+<p>Adresse : @Model.Adresse</p>
+<img src="@Model.PathPhoto" alt="Photo de profil" width="120" />
 
-@foreach (var profile in Model.UserProfile)
-{
-    <h1>@profile.Name</h1>
-    <p>@profile.Firstname</p>
-    <p>@profile.Age</p>
-    <img src="@profile.PathPhoto" alt="@profile.Name">
-    <p>@profile.Adresse</p>
-}
+<br />
+
 
 <a asp-page="/Index">Return home</a>

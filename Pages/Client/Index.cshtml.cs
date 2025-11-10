@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
 using System.Security.Claims;
 using System.Threading.Tasks;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 
 namespace ecommerce.Pages.Client
@@ -32,19 +33,29 @@ namespace ecommerce.Pages.Client
         public async Task<IActionResult> OnPostAsync(string returnUrl = null)
         {
             var user = await _context.Users.FirstOrDefaultAsync(u => u.Email == Email);
+
             if(user == null || !BCrypt.Net.BCrypt.Verify(Password, user.Password))
             {
                 ModelState.AddModelError(string.Empty, "Email ou mot de passe incorrect.");
                 return Page();
             }
 
+            // Récupérer le profil correspondant
+            var profile = _context.Profiles.FirstOrDefault(p => p.IdUser == user.Id);
             // Création des claims
             var claims = new List<Claim>
             {
                 new Claim(ClaimTypes.Name, user.Name),
-                new Claim(ClaimTypes.Email, user.Email)
+                new Claim(ClaimTypes.Email, user.Email),
             };
-
+            // Ajouter les infos du profil si elles existent
+            if (profile != null)
+            {
+                claims.Add(new Claim("Firstname", profile.Firstname ?? ""));
+                claims.Add(new Claim("Age", profile.Age.ToString()));
+                claims.Add(new Claim("Adresse", profile.Adresse ?? ""));
+                claims.Add(new Claim("PathPhoto", profile.PathPhoto ?? ""));
+            }
             var claimsIdentity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
             await HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, new ClaimsPrincipal(claimsIdentity));
 

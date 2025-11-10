@@ -32,7 +32,12 @@ form{
     align-content:center;
 }
 
-img{
+.img{
+    display:flex;
+    justify-content:center;
+}
+img {
+    margin-top:2%;
     width: 25%;
-    height:auto;
+    height: auto;
 }
