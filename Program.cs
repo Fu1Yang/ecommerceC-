@@ -36,6 +36,7 @@ namespace ecommerce
                 options.Cookie.HttpOnly = true;
                 options.Cookie.IsEssential = true;
             });
+            builder.Services.AddHttpContextAccessor();
             builder.Services.AddSingleton<StripePaymentService>();
 
             var app = builder.Build();
@@ -60,7 +61,7 @@ namespace ecommerce
             app.MapStaticAssets();
             app.MapRazorPages()
                .WithStaticAssets();
-            app.MapGet("/valider", () => "Bienvenue sur le serveur Stripe !");
+            
             app.Run();
         }
     }

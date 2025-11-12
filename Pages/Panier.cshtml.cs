@@ -128,7 +128,7 @@ namespace ecommerce.Pages
             }
         }
 
-        // ✅ Méthode corrigée qui charge depuis la base de données
+        // Méthode corrigée qui charge depuis la base de données
         private async Task LoadCartAsync()
         {
             var sessionCart = HttpContext.Session.GetString("Cart");

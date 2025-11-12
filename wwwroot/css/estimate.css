@@ -1,0 +1,160 @@
+﻿:root {
+    --accent: #2563eb;
+    --muted: #666
+}
+
+body {
+    font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    line-height: 1.5;
+    margin: 0;
+    background: #f6f8fb;
+    color: #111
+}
+
+.container {
+    max-width: 980px;
+    margin: 32px auto;
+    padding: 24px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 6px 30px rgba(20,20,40,0.06)
+}
+
+h1 {
+    margin: 0 0 8px;
+    font-size: 20px
+}
+
+p.lead {
+    margin: 0 0 20px;
+    color: var(--muted)
+}
+
+.grid {
+    display: grid;
+    gap: 12px
+}
+
+.cols-2 {
+    grid-template-columns: 1fr 1fr
+}
+
+label {
+    display: block;
+    font-size: 13px;
+    margin-bottom: 6px
+}
+
+input[type=text], input[type=email], input[type=tel], input[type=number], textarea, select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #e6e9ef;
+    border-radius: 8px;
+    font-size: 14px
+}
+
+textarea {
+    min-height: 80px;
+    resize: vertical
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 12px
+}
+
+th, td {
+    padding: 10px;
+    border-bottom: 1px solid #eef2f7;
+    text-align: left
+}
+
+th {
+    background: #fafcff;
+    font-weight: 600
+}
+
+.small {
+    font-size: 13px;
+    color: var(--muted)
+}
+
+.row-actions {
+    display: flex;
+    gap: 8px
+}
+
+.btn {
+    display: inline-block;
+    padding: 8px 12px;
+    border-radius: 8px;
+    border: 0;
+    background: var(--accent);
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer
+}
+
+    .btn.ghost {
+        background: transparent;
+        color: var(--accent);
+        border: 1px solid #e6eefc
+    }
+
+    .btn.warn {
+        background: #ef4444
+    }
+
+.summary {
+    margin-top: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    align-items: flex-end
+}
+
+    .summary .line {
+        display: flex;
+        gap: 20px
+    }
+
+    .summary .label {
+        min-width: 160px;
+        color: var(--muted)
+    }
+
+.notes {
+    margin-top: 12px;
+    font-size: 13px;
+    color: var(--muted)
+}
+
+.actions {
+    display: flex;
+    gap: 8px;
+    justify-content: flex-end;
+    margin-top: 18px
+}
+
+@media (max-width:720px) {
+    .cols-2 {
+        grid-template-columns: 1fr
+    }
+
+    .summary {
+        align-items: stretch
+    }
+
+        .summary .label {
+            min-width: 0
+        }
+}
+.choice {
+    display: flex;
+    align-content:center;
+    margin-top: 20px;
+}
+.choice label {
+    margin-left: 20px;
+}

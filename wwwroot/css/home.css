@@ -29,7 +29,6 @@
 
 .home {
     width: 100%;
-
 }
 
 .text-center{
@@ -42,7 +41,51 @@
     display:flex;
     justify-content:center;
 }
+
 .imgBmw img{
     width: 1000px;
     height:auto;
+}
+
+@media screen (max-width: 985px) {
+    .imgBmw .img {
+        width: 500px;
+        height: auto;
+    }
+
+    .home {
+        width: 80%;
+    }
+}
+@media screen and (max-width: 585px) {
+    .imgBmw .img {
+        width: 200px;
+        height: auto;
+    }
+
+    #colum-home {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .menu-bar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 577px;
+        height:20%;
+        background-color: grey;
+        padding-left: 15px;
+    }
+    .home {
+        width: 50%;
+    }
+
+}
+
+@media screen and (max-width: 285px) {
+    .imgBmw .img {
+        width: 100px;
+        height: auto;
+    }
 }

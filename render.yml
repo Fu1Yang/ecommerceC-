@@ -1,1 +1,6 @@
-﻿
+﻿services:
+  - type: web
+    name: ecommerce
+    env: docker
+    plan: free
+    dockerfilePath: ./Dockerfile
