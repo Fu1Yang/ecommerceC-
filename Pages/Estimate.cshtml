@@ -36,13 +36,28 @@
 
 
 <section style="margin-top:8px">
-<label for="project">Choix des reparations</label>
-<div>
-           
-                <input type="radio" id="huey" name="drone" value="huey" checked />
-                <label for="huey">Huey</label>
-            
-</div>
+<label for="project"></label>
+        <form>
+            <fieldset>
+                <legend>Choix des reparations</legend>
+
+                <div class="choice">
+                    <input type="radio" id="cardant" name="cardant" value="200" checked />
+                    <label for="huey">Changer les cardants prix 200 euro</label>
+                </div>
+
+                <div class="choice">
+                    <input type="radio" id="distri" name="distri" value="700" />
+                    <label for="dewey">Distribution prix 700 euro</label>
+                </div>
+
+                <div class="choice">
+                    <input type="radio" id="Entretient" name="Entretient" value="400" />
+                    <label for="louie">Entretient complete 400 euro </label>
+                </div>
+            </fieldset>
+
+        </form>
 
 
 

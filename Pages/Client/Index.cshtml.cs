@@ -59,8 +59,12 @@ namespace ecommerce.Pages.Client
                 claims.Add(new Claim("Adresse", profile.Adresse ?? ""));
                 claims.Add(new Claim("PathPhoto", profile.PathPhoto ?? ""));
             }
-       
-            var claimsIdentity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
+            else
+            {
+                return Redirect("/Client/");
+            }
+
+                var claimsIdentity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
             await HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, new ClaimsPrincipal(claimsIdentity));
 
             return Redirect(returnUrl ?? "/Client/Profile");
