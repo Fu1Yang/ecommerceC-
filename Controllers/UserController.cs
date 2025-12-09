@@ -1,4 +1,5 @@
 ﻿using ecommerce.Data;
+using ecommerce.DTO;
 using ecommerce.Models;
 using ecommerce.Pages;
 using Microsoft.AspNetCore.Mvc;
@@ -23,14 +24,31 @@ namespace ecommerce.Controllers
         }
 
         // GET: api/<UserController>
-        [HttpGet]
-        public IEnumerable<string> Get()
+        [HttpGet("{id}")]
+        public async Task<ActionResult<ProfilesDto>> GetUser(int id)
         {
-            return new string[] { "value1", "value2" };
+               var profile = await _context.Profiles
+                    .Where(t => t.IdUser == id)
+                    .Select(t => new ProfilesDto
+                    {
+                        Id = t.Id,
+                        Name = t.Name,
+                        Firstname = t.Firstname,
+                        Age = t.Age,
+                        PathPhoto = t.PathPhoto,
+                        Adresse = t.Adresse,
+                    })
+                    .FirstOrDefaultAsync();
+
+                if (profile == null)
+                {
+                    return NotFound("Utilisateur introuvable");
+                }
+                return Ok(profile);           
         }
 
         // GET api/<UserController>/5
-        [HttpGet("{id}")]
+        [HttpGet]
         public string Get(int id)
         {
             return "value";
