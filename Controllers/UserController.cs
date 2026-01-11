@@ -82,9 +82,10 @@ namespace ecommerce.Controllers
                 return Unauthorized(new LoginResponse { Success = false, Message = "Mot de passe incorrect" });
 
             // Connexion OK
-            return Ok(new LoginResponse
+            return Ok(new 
             {
                 Success = true,
+                userId = user.Id,
                 Message = "Connexion réussie"
             });
         }
