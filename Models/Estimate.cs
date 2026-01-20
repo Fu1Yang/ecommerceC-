@@ -8,10 +8,10 @@
         public string Telephone { get; set; }
         public string Adresse { get; set; }
         public decimal TarifTotal { get; set; }
-
+        public DateTime Date { get; set; }
         public Estimate() { }
 
-        public Estimate(int id, string nom, string email, string telephone, string adresse, decimal tarifTotal)
+        public Estimate(int id, string nom, string email, string telephone, string adresse, decimal tarifTotal, DateTime date)
         {
             Id = id;
             Nom = nom;
@@ -19,6 +19,7 @@
             Telephone = telephone;
             Adresse = adresse;
             TarifTotal = tarifTotal;
+            Date = date;
         }
     }
 
