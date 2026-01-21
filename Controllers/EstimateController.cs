@@ -1,7 +1,7 @@
-﻿using ecommerce.DTO;
+﻿using ecommerce.Data;
+using ecommerce.DTO;
 using Microsoft.AspNetCore.Mvc;
 
-// For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
 namespace ecommerce.Controllers
 {
@@ -10,41 +10,23 @@ namespace ecommerce.Controllers
     public class EstimateController : ControllerBase
     {
         private readonly EstimateService _service;
-        // GET: api/<EstimateController>
-        [HttpGet]
-        public IEnumerable<string> Get()
+
+        public EstimateController(EstimateService service)
         {
-            return new string[] { "value1", "value2" };
+            _service = service;
         }
 
-        // GET api/<EstimateController>/5
-        [HttpGet("{id}")]
-        public string Get(int id)
-        {
-            return "value";
-        }
 
-        // POST api/<EstimateController>
         [HttpPost]
         public async Task<IActionResult> Create([FromBody] EstimateDto dto)
         {
-            if (!ModelState.IsValid) return BadRequest(ModelState);
+            
             await _service.CreateAsync(dto);
 
             return Ok(new {message = "Devis cree avec succes"});
         }
         
 
-        // PUT api/<EstimateController>/5
-        [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
-        {
-        }
 
-        // DELETE api/<EstimateController>/5
-        [HttpDelete("{id}")]
-        public void Delete(int id)
-        {
-        }
     }
 }
