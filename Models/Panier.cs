@@ -3,10 +3,10 @@
     public class Panier
     {
         public int Id { get; set; }
-        public int UserId { get; set; }       // pour relier le panier à l'utilisateur
-        public int ProductId { get; set; }    // produit ajouté
-        public string NameProduct { get; set; } // nom du produit 
-        public int Quantity { get; set; }     // quantité
+        public int UserId { get; set; }       
+        public int ProductId { get; set; }   
+        public string NameProduct { get; set; } 
+        public int Quantity { get; set; }    
         public DateTime AddedAt { get; set; }
 
         public Panier() { }

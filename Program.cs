@@ -29,6 +29,7 @@ namespace ecommerce
             // Add services to the container.
             builder.Services.AddRazorPages();
             builder.Services.AddControllers();
+            builder.Services.AddScoped<EstimateService>();
             builder.Services.AddDbContext<DataContext>(options =>
             options.UseSqlServer(builder.Configuration.GetConnectionString("DatabaseConnection")));
 

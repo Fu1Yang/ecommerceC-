@@ -9,6 +9,7 @@ namespace ecommerce.Data
         {
             
         }
+
         // Déclare chaque table comme DbSet
         public DbSet<Users> Users { get; set; }
         public DbSet<Produits> Produits { get; set; }
@@ -16,6 +17,7 @@ namespace ecommerce.Data
         public DbSet<Panier> Paniers { get; set; }
 
         public DbSet<Tuto> Tuto { get; set; }
+        public DbSet<Estimate> Estimate { get; set; }
 
 
         //personnaliser le mapping
@@ -26,6 +28,7 @@ namespace ecommerce.Data
             modelBuilder.Entity<Rdv>().ToTable("Rdvs");
             modelBuilder.Entity<Panier>().ToTable("Paniers");
             modelBuilder.Entity<Tuto>().ToTable("Tuto");
+            modelBuilder.Entity<Estimate>().ToTable("Estimate");
 
         }
         public DbSet<ecommerce.Models.Profiles> Profiles { get; set; } = default!;
