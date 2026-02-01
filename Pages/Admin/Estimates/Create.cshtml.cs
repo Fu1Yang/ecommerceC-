@@ -1,10 +1,9 @@
-﻿
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using ecommerce.Models;
 using Microsoft.AspNetCore.Authorization;
 
-namespace ecommerce.Pages.Admin.Profile
+namespace ecommerce.Pages.Admin.Estimates
 {
     [Authorize(Roles = "Admin")]
     public class CreateModel : PageModel
@@ -22,7 +21,7 @@ namespace ecommerce.Pages.Admin.Profile
         }
 
         [BindProperty]
-        public Profiles Profiles { get; set; } = default!;
+        public Estimate Estimate { get; set; } = default!;
 
         // For more information, see https://aka.ms/RazorPagesCRUD.
         public async Task<IActionResult> OnPostAsync()
@@ -32,7 +31,7 @@ namespace ecommerce.Pages.Admin.Profile
                 return Page();
             }
 
-            _context.Profiles.Add(Profiles);
+            _context.Estimate.Add(Estimate);
             await _context.SaveChangesAsync();
 
             return RedirectToPage("./Index");

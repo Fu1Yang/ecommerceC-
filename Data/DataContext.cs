@@ -30,6 +30,16 @@ namespace ecommerce.Data
             modelBuilder.Entity<Tuto>().ToTable("Tuto");
             modelBuilder.Entity<Estimate>().ToTable("Estimate");
 
+            modelBuilder.Entity<Estimate>()
+                .Property(e => e.TarifTotal)
+                .HasColumnType("decimal(18,2)");
+            
+            modelBuilder.Entity<Produits>()
+                .Property(p => p.Price)
+                .HasColumnType("decimal(18,2)");
+
+            base.OnModelCreating(modelBuilder);
+
         }
         public DbSet<ecommerce.Models.Profiles> Profiles { get; set; } = default!;
     }

@@ -22,14 +22,14 @@ namespace ecommerce
                     options.LoginPath = "/client/index";       // si non connecté
                     options.AccessDeniedPath = "/"; // où aller si connecté mais pas le bon rôle
                 });
-            builder.Services.AddDbContext<DataContext>(options =>
-            options.UseSqlServer(builder.Configuration.GetConnectionString("DatabaseConnection")));
+        
 
 
             // Add services to the container.
             builder.Services.AddRazorPages();
             builder.Services.AddControllers();
             builder.Services.AddScoped<EstimateService>();
+
             builder.Services.AddDbContext<DataContext>(options =>
             options.UseSqlServer(builder.Configuration.GetConnectionString("DatabaseConnection")));
 
