@@ -1,57 +1,91 @@
-﻿body {
+﻿/* ----- BASE ----- */
+
+
+body {
     margin: 0;
     background-image: url("../images/course.jpg");
     background-position: center;
+    background-size: cover;
+    height: 100vh;
+    overflow: hidden;
+    
 }
-h1{
-    color: white;
-    font-weight: bold;
-}
+
+
 #colum-home {
+    position: relative;
     display: flex;
     flex-direction: row;
     width: 100%;
-
+    height: 100vh;
 }
 
+
+/* ----- TON CONTENU ----- */
+
+.display-4 {
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+    .display-4 span {
+        color: red;
+        box-shadow: 2px 2px 2px 1px #ffffff;
+    }
+
+/* MENU */
+
 .menu-bar {
+    position: relative;
+    z-index: 20;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     width: 20%;
-    height:577px;
-    background-color: grey;
+    height: 577px;
+    background-color: #879e7b;
     padding-left: 15px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 300px;
+    opacity: 0.8;
 }
 
-.menu-bar a {
-    text-decoration: none;
-    color: black;
-    font-size: 20px;
-    font-weight: bold;
- }
+    .menu-bar a {
+        text-decoration: none;
+        color: black;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+/* HOME */
 
 .home {
+    position: relative;
+    z-index: 20;
     width: 100%;
 }
 
-.text-center{
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    justify-content:center;
+.text-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
+
 .imgBmw {
-    display:flex;
-    justify-content:center;
+    display: flex;
+    justify-content: center;
 }
 
-.imgBmw img{
-    width: 1000px;
-    height:auto;
-}
+    .imgBmw img {
+        width: 1000px;
+        height: auto;
+    }
 
-@media screen (max-width: 985px) {
+/* ----- RESPONSIVE ----- */
+
+@media screen and (max-width: 985px) {
     .imgBmw .img {
         width: 500px;
         height: auto;
@@ -61,35 +95,63 @@ h1{
         width: 80%;
     }
 }
+
 @media screen and (max-width: 585px) {
-    .imgBmw .img {
-        width: 200px;
-        height: auto;
-    }
 
     #colum-home {
         display: flex;
         flex-direction: column;
     }
 
+    .imgBmw .img {
+        width: 200px;
+        height: auto;
+    }
+
     .menu-bar {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
-        width: 577px;
-        height:20%;
+        width: 100%;
+        height: 20%;
         background-color: grey;
         padding-left: 15px;
     }
+
     .home {
         width: 50%;
     }
-
 }
 
 @media screen and (max-width: 285px) {
     .imgBmw .img {
         width: 100px;
         height: auto;
+    }
+}
+/* ---------- CONTENUE DE LA PLUIE ----------------------*/
+
+
+.drop {
+    background: -webkit-gradient(linear,0% 0%,0% 100%, from(rgba(13,52,58,1) ), to(rgba(255,255,255,0.6)) );
+    background: -moz-linear-gradient(top, rgba(13,52,58,1) 0%, rgba(255,255,255,.6) 100%);
+    width: 1px;
+    height: 89px;
+    position: absolute;
+    bottom: 200px;
+    -webkit-animation: fall .63s linear infinite;
+    -moz-animation: fall .63s linear infinite;
+}
+
+/* animate the drops*/
+@-webkit-keyframes fall {
+    to {
+        margin-top: 900px;
+    }
+}
+
+@-moz-keyframes fall {
+    to {
+        margin-top: 900px;
     }
 }

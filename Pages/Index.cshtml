@@ -4,13 +4,15 @@
     ViewData["Title"] = "Home page";
 }
 <link rel="stylesheet" href="~/css/home.css" />
+<script src="~/js/site.js" defer></script>
+
 
 <div>
     <button onclick="hideMenu()">-</button>
-    <button onclick="dispayMenu()">Afficher</button>
+    <button onclick="displayMenu()">Afficher</button>
 </div>
 
-<div id="colum-home">
+<div id="colum-home" class="rain">
  
     <div class="menu-bar">
             <a href="PiecesAuto">Piéce auto</a>
@@ -22,7 +24,7 @@
         </div>
     <div class="home">
         <div class="text-center">
-            <h1 class="display-4">BMW M4 && E63 AMG</h1>
+            <h1 class="display-4">BMW M4 <span>&&</span> E63 AMG</h1>
         </div>
         <div class="imgBmw">
             @* <img src="../images/bmw.jpg"/> *@
@@ -34,4 +36,4 @@
 
 @* <button onclick="showAlert()">Connectez-vous</button> *@
 
-<script src="~/js/site.js"></script>
+
